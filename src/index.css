@@ -1,4 +1,4 @@
-@import "tailwind.css";
+@import "tailwindcss";
 
 @theme {
   --color-background: #0f1418;
@@ -28,12 +28,12 @@
 
 body {
 
-  background-color: var (--  --color-background);
+  background-color: var (--color-background);
   color: var(--color-foreground);
   font-family: "inter", sans-serif;
   }
 }
 
 .font-serif {
-  font-family: ;
+  font-family: "playfair Display", serif;
 }
