@@ -9,15 +9,17 @@ export const Navbar = () => {
   return (
     <header>
       <nav>
-        <a>
+        <a href="#">
           MF<span>.</span>
         </a>
 
-        {/*Desktop Nav */}
+        {/* Desktop Nav */}
         <div>
           <div>
             {navLinks.map((link) => (
-                <a>(link.label}</a>
+              <a key={link.href} href={link.href}>
+                {link.label}
+              </a>
             ))}
           </div>
         </div>
