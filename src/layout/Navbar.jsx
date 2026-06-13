@@ -7,8 +7,8 @@ const navLinks = [
 
 export const Navbar = () => {
   return (
-    <header>
-      <nav>
+    <header className="fixed top-0 left-0 bg-transparent py-5">
+      <nav className="container mx-auto px-6 flex items">
         <a href="#">
           MF<span>.</span>
         </a>
