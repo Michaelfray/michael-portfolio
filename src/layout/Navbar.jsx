@@ -45,7 +45,21 @@ export const Navbar = () => {
         </button>
       </nav>
       {/* Mobile Menu */}
-      <div className="md:" />
+      <div className="md:hidden-glass-strong">
+        <div className="container mx-auto px-6 py-6 flex flex-col gap-4">
+          {navLinks.map((link) => (
+            <a
+              key={link.href}
+              href={link.href}
+              className="text-lg text muted-foreground hover:text-foreground py-2"
+            >
+              {link.label}
+            </a>
+          ))}
+
+          <Button>Contact Me</Button>
+        </div>
+      </div>
     </header>
   );
 };
