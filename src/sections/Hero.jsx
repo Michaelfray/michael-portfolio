@@ -2,6 +2,18 @@ import heroBg from "../assets/img/hero-bg.jpg";
 import { Button } from "@/components/Button";
 import { ArrowRight, Linkedin, Github } from "lucide-react";
 import { AnimatedBorderButton } from "@/components/AnimatedBorderButton";
+const skills = [
+  "React",
+  "JavaScript",
+  "Tailwind CSS",
+  "C#",
+  ".NET",
+  "ASP.NET",
+  "Azure",
+  "SQL",
+  "Git",
+  "GitHub",
+];
 
 export const Hero = () => {
   return (
@@ -94,10 +106,14 @@ export const Hero = () => {
             </div>
           </div>
           {/* Right Column - Profile Image */}
-          <div>
-            {/* Profile image */}
-            <div>
-              <img src="../assets/img/michael-profile.png" />
+            <div className="flex animate-marquee">
+              {[...skills, ...skills].map((skill, idx) => (
+                <div key={idx} className="flex-shrink-0 px-8 py-4">
+                  <span className="text-xl font-semibold text-muted-foreground/50 hover:text-muted-foreground transition-colors">
+                    {skill}
+                  </span>
+                </div>
+              ))}
             </div>
           </div>
         </div>
