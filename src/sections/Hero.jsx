@@ -123,6 +123,16 @@ export const Hero = () => {
                   alt="Michael Fray"
                   className="w-full aspect-[4/5] object-cover rounded-2xl"
                 />
+                {/* Floating Badge */}
+                <div className="absolute -bottom-4 -right-4 glass rounded-xl px-4 py-3 animate-float">
+                  <div className="flex items-center gap-3">
+                    <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse" />
+
+                    <span className="text-sm font-medium">
+                      Available for internship
+                    </span>
+                  </div>
+                </div>
             <div className="flex animate-marquee">
               {[...skills, ...skills].map((skill, idx) => (
                 <div key={idx} className="flex-shrink-0 px-8 py-4">
