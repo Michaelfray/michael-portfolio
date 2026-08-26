@@ -3,6 +3,7 @@ import profileImg from "../assets/img/michael-profil.png";
 import { Button } from "@/components/Button";
 import { ArrowRight, Linkedin, Github, ChevronDown } from "lucide-react";
 import { AnimatedBorderButton } from "@/components/AnimatedBorderButton";
+
 const skills = [
   "React",
   "JavaScript",
@@ -26,7 +27,8 @@ export const Hero = () => {
           alt="Hero img"
           className="w-full h-full object-cover opacity-40"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-background/20 via-background/80 to-background via-background to-backgorund" />
+
+        <div className="absolute inset-0 bg-gradient-to-b from-background/20 via-background/80 to-background" />
       </div>
 
       {/* Green dots */}
@@ -51,7 +53,7 @@ export const Hero = () => {
       {/* Content */}
       <div className="container mx-auto px-6 pt-32 pb-20 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* {/* Left Column - Text Content */}
+          {/* Left Column - Text Content */}
           <div className="space-y-8">
             <div className="animate-fade-in">
               <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-sm text-primary">
@@ -63,8 +65,7 @@ export const Hero = () => {
             {/* Headline */}
             <div className="space-y-4">
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight animate-fade-in animation-delay-100">
-                Crafting{" "}
-                <span className="text-primary glow-text ">digital</span>
+                Crafting <span className="text-primary glow-text">digital</span>
                 <br />
                 experiences with
                 <br />
@@ -72,6 +73,7 @@ export const Hero = () => {
                   precision.
                 </span>
               </h1>
+
               <p className="text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-200">
                 Hi im Michael Fray I'm a web developer focused on React, modern
                 frontend development, and backend fundamentals with C# and
@@ -84,17 +86,22 @@ export const Hero = () => {
               <Button size="lg">
                 Contact Me <ArrowRight className="w-5 h-5" />
               </Button>
+
               <AnimatedBorderButton />
             </div>
 
             {/* Social links */}
-            <div className="flex items-center gp-4 animate-fade-in animation-delay-400ms">
+            <div className="flex items-center gap-4 animate-fade-in animation-delay-400ms">
               <span>Follow:</span>
+
               {[
-                { icon: Github, href: "https://github.com/Michaelfray" },
+                {
+                  icon: Github,
+                  href: "https://github.com/Michaelfray",
+                },
                 {
                   icon: Linkedin,
-                  href: "https://www.linkedin.com/notifications/?filter=all",
+                  href: "https://www.linkedin.com/in/michael-f-567a47309/",
                 },
               ].map((social, idx) => (
                 <a
@@ -109,6 +116,7 @@ export const Hero = () => {
               ))}
             </div>
           </div>
+
           {/* Right Column - Profile Image */}
           <div className="relative animate-fade-in animation-delay-300">
             <div className="relative max-w-md mx-auto">
@@ -118,12 +126,14 @@ export const Hero = () => {
                 from-primary/30 via-transparent
                 to-primary/10 blur-2xl animate-pulse"
               />
+
               <div className="relative glass rounded-3xl p-2 glow-border">
                 <img
                   src={profileImg}
                   alt="Michael Fray"
                   className="w-full aspect-[4/5] object-cover rounded-2xl"
                 />
+
                 {/* Floating Badge */}
                 <div className="absolute -bottom-4 -right-4 glass rounded-xl px-4 py-3 animate-float">
                   <div className="flex items-center gap-3">
@@ -134,6 +144,22 @@ export const Hero = () => {
                     </span>
                   </div>
                 </div>
+
+                {/* Stats Badge */}
+                <div className="absolute -top-4 -left-4 glass rounded-xl px-4 py-3 animate-float animation-delay-500">
+                  <div className="text-2xl font-bold text-primary">
+                    React + .NET
+                  </div>
+
+                  <div className="text-xs text-muted-foreground">
+                    Web Development
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         {/* Skills Section */}
         <div className="mt-20 animate-fade-in animation-delay-600">
           <p className="text-sm text-muted-foreground mb-6 text-center">
@@ -163,6 +189,7 @@ export const Hero = () => {
           </div>
         </div>
       </div>
+
       {/* Scroll */}
       <div
         className="absolute bottom-8 left-1/2 -translate-x-1/2
