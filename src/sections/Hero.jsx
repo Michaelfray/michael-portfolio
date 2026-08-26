@@ -1,4 +1,5 @@
 import heroBg from "../assets/img/hero-bg.jpg";
+import profileImg from "../assets/img/michael-profil.png";
 import { Button } from "@/components/Button";
 import { ArrowRight, Linkedin, Github } from "lucide-react";
 import { AnimatedBorderButton } from "@/components/AnimatedBorderButton";
@@ -108,6 +109,20 @@ export const Hero = () => {
             </div>
           </div>
           {/* Right Column - Profile Image */}
+          <div className="relative animate-fade-in animation-delay-300">
+            <div className="relative max-w-md mx-auto">
+              <div
+                className="absolute inset-0
+                rounded-3xl bg-gradient-to-br
+                from-primary/30 via-transparent
+                to-primary/10 blur-2xl animate-pulse"
+              />
+              <div className="relative glass rounded-3xl p-2 glow-border">
+                <img
+                  src={profileImg}
+                  alt="Michael Fray"
+                  className="w-full aspect-[4/5] object-cover rounded-2xl"
+                />
             <div className="flex animate-marquee">
               {[...skills, ...skills].map((skill, idx) => (
                 <div key={idx} className="flex-shrink-0 px-8 py-4">
