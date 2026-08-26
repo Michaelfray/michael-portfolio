@@ -29,19 +29,20 @@ export const Hero = () => {
         <div className="absolute inset-0 bg-gradient-to-b from-background/20 via-background/80 to-background via-background to-backgorund" />
       </div>
 
-      {/* green dots */}
+      {/* Green dots */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         {[...Array(30)].map((_, i) => (
           <div
+            key={i}
             className="absolute w-1.5 h-1.5 rounded-full opacity-60"
             style={{
               backgroundColor: "#20B2A6",
-              left: `${Math.random() * 100}%`,
-              top: `${Math.random() * 100}%`,
+              left: `${(i * 37) % 100}%`,
+              top: `${(i * 53) % 100}%`,
               animation: `slow-drift ${
-                15 + Math.random() * 20
+                15 + ((i * 7) % 20)
               }s ease-in-out infinite`,
-              animationDelay: `${Math.random() * 5}s`,
+              animationDelay: `${(i * 0.35) % 5}s`,
             }}
           />
         ))}
