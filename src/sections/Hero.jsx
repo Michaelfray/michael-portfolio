@@ -1,7 +1,7 @@
 import heroBg from "../assets/img/hero-bg.jpg";
 import profileImg from "../assets/img/michael-profil.png";
 import { Button } from "@/components/Button";
-import { ArrowRight, Linkedin, Github } from "lucide-react";
+import { ArrowRight, Linkedin, Github, ChevronDown } from "lucide-react";
 import { AnimatedBorderButton } from "@/components/AnimatedBorderButton";
 const skills = [
   "React",
