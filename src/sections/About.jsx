@@ -5,24 +5,25 @@ const highlights = [
     icon: Code2,
     title: "Clean Code",
     description:
-      "Writing maintainable, scalable code that stands the test of time.",
+      "Focused on writing clear, maintainable code and reusable components.",
   },
   {
     icon: Rocket,
-    title: "Performance",
+    title: "Learning & Growth",
     description:
-      "Optimizing for speed and delivering lightning-fast user experiences.",
+      "Continuously improving my skills in React, .NET, APIs and Azure.",
   },
   {
     icon: Users,
     title: "Collaboration",
-    description: "Working closely with teams to bring ideas to life.",
+    description:
+      "Enjoy working in teams, sharing ideas and learning from other developers.",
   },
   {
     icon: Lightbulb,
-    title: "Innovation",
+    title: "Problem Solving",
     description:
-      "Staying ahead with the latest technologies and best practices.",
+      "Motivated by solving problems and turning ideas into practical web solutions.",
   },
 ];
 
