@@ -4,7 +4,7 @@ import coreFitnessImg from "../assets/img/core-fitness.png";
 import reviewApiImg from "../assets/img/review-api.png";
 import movieSeatBookingImg from "../assets/img/movie-seat-booking.png";
 
-// Byt ut "#" mot riktiga länkar. Lämna link som "" om projektet saknar livedemo.
+// Leave link as "" if the project has no live demo.
 const projects = [
   {
     title: "CoreFitness",
