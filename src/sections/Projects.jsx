@@ -12,16 +12,16 @@ const projects = [
       "A gym membership web application built with ASP.NET Core MVC, with a strong focus on authentication flow using ASP.NET Identity, including sign-up, sign-in, logout, member profiles, account management, and SQL Server integration.",
     image: coreFitnessImg,
     tags: ["C#", ".NET", "ASP.NET Core", "SQL Server"],
-    link: "#",
+    link: "",
     github: "https://github.com/Michaelfray/aspnet-michael-fray",
   },
   {
     title: "Shiko-ReviewApi",
     description:
-      "A course review API built with ASP.NET Core Minimal API, integrating with an external Course API, using Azure SQL for storing and retrieving reviews, and deployed to Azure App Service.",
+      "A course review API built with ASP.NET Core Minimal API, integrating with an external Course API, using Azure SQL for storing and retrieving reviews, and was deployed to Azure App Service.",
     image: reviewApiImg,
     tags: ["C#", ".NET", "Minimal API", "Azure SQL"],
-    link: "#",
+    link: "",
     github: "https://github.com/cms25-aspnet2-grupp-3/review-api",
   },
   {
@@ -30,7 +30,7 @@ const projects = [
       "A React-based movie seat booking application featuring dynamic seat selection, real-time price calculation, form validation, and an Admin panel with full CRUD functionality using JSON Server.",
     image: movieSeatBookingImg,
     tags: ["React", "JavaScript", "Vite", "JSON Server"],
-    link: "#",
+    link: "",
     github: "https://github.com/Michaelfray/movie-seat-booking",
   },
 ];
