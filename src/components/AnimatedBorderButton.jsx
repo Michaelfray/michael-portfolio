@@ -1,9 +1,7 @@
-import { Download } from "lucide-react";
-
-export const AnimatedBorderButton = () => {
+export const AnimatedBorderButton = ({ href, children }) => {
   return (
     <a
-      href="/MichaelFrayCV-it.pdf"
+      href={href}
       target="_blank"
       rel="noopener noreferrer"
       className="relative bg-transparent border border-border 
@@ -33,8 +31,7 @@ export const AnimatedBorderButton = () => {
         />
       </svg>
       <span className="relative z-10 flex items-center justify-center gap-2">
-        <Download className="w-5 h-5" />
-        View Cv
+        {children}
       </span>
     </a>
   );

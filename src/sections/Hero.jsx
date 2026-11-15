@@ -1,7 +1,7 @@
 import heroBg from "../assets/img/hero-bg.jpg";
 import profileImg from "../assets/img/michael-profil.png";
 import { Button } from "@/components/Button";
-import { ArrowRight, Linkedin, Github, ChevronDown } from "lucide-react";
+import { ArrowRight, Linkedin, Github, ChevronDown, Download } from "lucide-react";
 import { AnimatedBorderButton } from "@/components/AnimatedBorderButton";
 
 const skills = [
@@ -87,7 +87,10 @@ export const Hero = () => {
                 Contact Me <ArrowRight className="w-5 h-5" />
               </Button>
 
-              <AnimatedBorderButton />
+              <AnimatedBorderButton href="/MichaelFrayCV-it.pdf">
+                <Download className="w-5 h-5" />
+                View CV
+              </AnimatedBorderButton>
             </div>
 
             {/* Social links */}
